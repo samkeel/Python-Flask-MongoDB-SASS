@@ -4,9 +4,7 @@
   "description": "Basic web app using mongoDB and Postman for testing the end points.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss static/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "npm-run-all",
     "compile:sass": "node-sass sass/main.scss static/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last versions' static/style.comp.css -o static/style.prefix.css",
     "compress:css": "node-sass static/style.prefix.css static/style.css --output-style compressed",
