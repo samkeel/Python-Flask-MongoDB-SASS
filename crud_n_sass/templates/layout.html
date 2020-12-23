@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link href="{{ url_for('static', filename='css/main.scss.css') }}"
+      rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 
 <body>
     {% include 'includes/nav.html' %}
+
     {% block content %}
+
     {% endblock %}
+
 </body>
 
 </html>

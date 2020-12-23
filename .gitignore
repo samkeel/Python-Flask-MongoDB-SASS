@@ -126,3 +126,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 node_modules
+
+# ignore generated css files
+static/css/
