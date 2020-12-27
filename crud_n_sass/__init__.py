@@ -17,8 +17,8 @@ def create_app():
     db = MongoEngine()
     db.init_app(app)
 
-    from crud_n_sass import blog
-    app.register_blueprint(blog.bp)
+    from crud_n_sass import todo
+    app.register_blueprint(todo.bp)
 
     app.add_url_rule("/", endpoint="index")
 
